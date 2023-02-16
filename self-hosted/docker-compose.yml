@@ -1,0 +1,11 @@
+# yaml 配置实例
+version: '3'
+services:
+  evaporator-mock:
+    image: zhangtao25/evaporator-mock:dev
+    restart: always
+    container_name: evaporator-mock-app
+    ports:
+      - 28000:8080
+    volumes:
+      - ./conf/application.yml:/usr/src/app/packages/evaporator-mock-api/conf/application.yml
