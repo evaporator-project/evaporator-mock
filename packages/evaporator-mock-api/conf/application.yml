@@ -1,0 +1,20 @@
+datasource:
+  mongodb:
+    type: mongodb
+    host: 127.0.0.1
+    port: 27017
+    username: root
+    password: root
+    database: canyon
+    requestSchemaName: request
+    fileSchemaName: file
+    workspaceSchemaName: workspace
+    userSchemaName: user
+    folderSchemaName: folder
+
+gitlab:
+  application:
+    clientId: clientId
+    clientSecret: clientSecret
+    redirectUri: redirectUri
+    uri: uri

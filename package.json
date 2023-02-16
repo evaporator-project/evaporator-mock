@@ -1,0 +1,15 @@
+{
+  "name": "evaporator-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpm -r do-start",
+    "build": "pnpm -r do-build && rm -rf ./packages/evaporator-mock-api/client/* && mv ./packages/evaporator-mock-ui/dist/* ./packages/evaporator-mock-api/client",
+    "server": "pnpm -r do-server",
+    "lint": "rome format ./ --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
