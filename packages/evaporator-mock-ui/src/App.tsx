@@ -73,7 +73,7 @@ const App = () => {
         console.log(sort, filter);
         return request<{
           data: GithubIssueItem[];
-        }>('http://127.0.0.1:8080/mock', {
+        }>('http://mock.rico.org.cn/mock', {
           params,
         });
       }}

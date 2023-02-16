@@ -57,12 +57,12 @@ const CreateAndUpdate:FC<CreateAndUpdateProps> = ({record,updateTable}) => {
       submitTimeout={2000}
       onFinish={async (values) => {
         if (record){
-          await axios.patch('http://localhost:8080/mock',{
+          await axios.patch('http://mock.rico.org.cn:8080/mock',{
             mockId:record._id,
             ...values
           })
         } else {
-          await axios.post('http://localhost:8080/mock',values)
+          await axios.post('http://mock.rico.org.cn:8080/mock',values)
         }
         updateTable()
         // 不返回不会关闭弹框
